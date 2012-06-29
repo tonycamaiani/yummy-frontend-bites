@@ -1,26 +1,34 @@
-  @mixin rounded($radius: 15px) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
-    -moz-background-clip: padding; 
-    -webkit-background-clip: padding-box; 
-    background-clip: padding-box; 
-  }
-  
-  @mixin rounded_part($side, $radius: 15px) {
-    border-#{$side}-radius: $radius;
-    -moz-border-radius-#{$side}: $radius;
-    -webkit-border-#{$side}-radius: $radius;
-    -moz-background-clip: padding; 
-    -webkit-background-clip: padding-box; 
-    background-clip: padding-box; 
-  }
+@mixin rounded($radius: 15px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  -moz-background-clip: padding; 
+  -webkit-background-clip: padding-box; 
+  background-clip: padding-box; 
+}
 
-  @mixin box_shadow($px, $color) {
-    -webkit-box-shadow: $px $color; 
-    -moz-box-shadow: $px $color; 
-    box-shadow: $px $color; 
-  }
-  
+@mixin rounded_part($side, $radius: 15px) {
+  border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
+  -moz-background-clip: padding; 
+  -webkit-background-clip: padding-box; 
+  background-clip: padding-box; 
+}
+
+@mixin box_shadow($px, $color) {
+  -webkit-box-shadow: $px $color; 
+  -moz-box-shadow: $px $color; 
+  box-shadow: $px $color; 
+}
+
+@mixin opacity($num:100) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$num)";
+  filter:alpha(opacity=$num);
+  -moz-opacity:$num/100;
+  -khtml-opacity:$num/100;
+  opacity:$num/100;
+}
+
 
 
