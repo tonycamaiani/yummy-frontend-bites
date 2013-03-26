@@ -1,0 +1,258 @@
+@mixin rounded($radius: 15px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+form {
+
+  label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .block-label label { display: block;}
+
+  textarea, input {
+    font-family: "Open Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  textarea {
+    outline-width: 0;
+    margin: 0;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-top: 1px solid #8b8b8b;
+    padding: 8px 8px 8px 7px;
+    color: #383838;
+    @include rounded(3px);
+
+  }
+
+  &.fields_495px input[type=text],
+  &.fields_495px input[type=email],
+  &.fields_495px input[type=password] {width: 495px;}
+  &.fields_495px textarea { width: 495px; height: 150px; }
+
+  select {
+    outline-width: 0;
+    margin: 0;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-top: 1px solid #8b8b8b;
+    cursor: pointer;
+    color: #383838;
+    @include rounded(3px);
+  }
+
+  div.input {
+    margin-bottom: 15px;
+  }
+
+  .field_with_errors {
+    input,
+    textarea {
+      border-color: #cc0000;
+    }
+
+    .error {
+      display: block;
+      overflow: hidden;
+      color: #cc0000;
+      font-size: 12px;
+      line-height: 20px;
+      padding: 0 3px;
+    }
+
+  } // .field_with_errors
+
+  .transfer_section .readonly,
+  .boxform.readonly {
+    background: #fff;
+    color: #515151;
+    border: 0;
+  }
+
+
+} // form
+
+body.account {
+/* generic form styles */
+
+ form .input label {
+   color: #383838;
+   font-weight: bold;
+   display: block;
+   font-size: 14px;
+   margin-bottom: 3px;
+ }
+
+ form textarea,
+ form .input input {
+   line-height: 24px;
+   height: 24px;
+   padding: 4px 7px;
+   margin-right: 5px;
+ }
+
+
+form .input.field_with_errors label { color: #900; }
+form .input.field_with_errors input,
+form .input.field_with_errors textarea { border-color: #900 }
+form .input.field_with_errors span.error {
+  display: block;
+  padding: 3px;
+  color: #900;
+}
+
+ .simple_form.user .input input  {
+   width: 484px;
+ }
+
+  .simple_form.user .input.short {
+   width: 258px;
+   float: left;
+ }
+
+  .simple_form.user .input.short input {
+   width: 226px;
+ }
+
+
+ .simple_form.user .input.clear {
+   clear: both;
+ }
+
+ .simple_form.user p {
+   font-size: 14px;
+   margin-top: 0;
+ }
+
+
+  .simple_form.contact dt {
+   color: #383838;
+   font-weight: bold;
+   display: block;
+   font-size: 14px;
+   margin-bottom: 3px;
+  }
+
+  .simple_form.contact dd {
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+  }
+
+  .simple_form.contact textarea {
+    width: 455px;
+    height: 172px;
+  }
+
+
+  .simple_form.user_transfer textarea {
+    width: 455px;
+    height: 172px;
+    margin-bottom: 0px;
+  }
+
+
+  #edit_transfer label { font-weight: normal; }
+  #edit_transfer .hint {
+    top: -20px;
+    left: -62px;
+    position: relative;
+    font-size: 12px;
+  }
+
+  #edit_transfer.simple_form .with_currency { margin-right: 10px; }
+  #edit_transfer.simple_form .input input { width: 300px; }
+  #edit_transfer.simple_form.post_edit .input input { width: 375px; }
+  #edit_transfer.simple_form .with_currency input { width: 220px; }
+
+  #edit_transfer.simple_form .currency select#transfer_currency_sent_id {
+    font-size: 18px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 23px;
+   }
+
+  #edit_transfer.simple_form .input input.date {
+   width: 90px;
+   border: 1px solid #CCC;
+   border-top: 1px solid #9D9D9D;
+   line-height: 22px;
+   height: 22px;
+   padding: 4px 3px 3px 25px;
+   margin-right: 5px;
+   @include rounded(5px);
+   background: #fff url(../img/dashboard/ico_calendar.png) no-repeat 5px center;
+  }
+
+   .gray_inner form .input {
+     margin-bottom: 0;
+   }
+
+
+
+} // .account ==> student dashboard form styles
+
+// should change to this .simple_form.medium for now #new_referral
+#new_referral {
+  label {
+    font-size: 13px;
+  }
+  input.string {
+    font-size: 13px;
+    line-height: 18px;
+    height: 18px;
+    margin: 0;
+    width: 92%;
+  }
+} // #new_referral
+
+// should change to this .simple_form.three_cols for now #new_referral
+#new_referral {
+
+  .input {
+    margin: 0 14px 0 0;
+    width: 31.75%;
+    height: 70px;
+    &.last { margin-right: 0px;}
+  }
+
+} // #new_referral
+
+.placeholder { color: #333; }
+
+  .field_like {
+    margin: 0;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-top: 1px solid #8b8b8b;
+    padding: 8px 8px 8px 7px;
+    color: #383838;
+    @include rounded(3px);
+
+    &.medium {
+      font-size: 13px;
+      line-height: 18px;
+      height: 18px;
+      margin: 0;
+      padding: 4px 7px;
+    }
+
+
+  }
+
+
+  /* Internet Explorer hack for password fields and radio buttons */
+  input#password, input.password, input.radio {
+    *font-family: Arial, sans-serif!important;
+  }

@@ -1,0 +1,37 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  color: #383838; }
+
+/* remember to remove these*/
+.viewport_sizes {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  padding: 10px;
+  font-size: 12px;
+  border: 2px solid #999;
+  background-color: #eee; }
+
+#width_control {
+  margin: 50px 10px 10px 0;
+  background-color: #000;
+  border-right: 10px solid #a00; }
+  #width_control h4 {
+    color: #fff;
+    padding: 3px; }
+
+/* ===== media queries ========================================================== */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports from 480px to 768px go here */
+  #width_control {
+    background-color: #333; } }
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports from 768px to 1024px go here */
+  #width_control {
+    background-color: #666; } }
+@media only screen and (min-width: 1024px) {
+  /* Style adjustments for viewports over 768px go here */
+  #width_control {
+    width: 994px;
+    background-color: #999; } }

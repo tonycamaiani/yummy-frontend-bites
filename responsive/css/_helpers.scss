@@ -1,0 +1,70 @@
+// version 0.1
+
+.top_line {border-top: 1px solid #EBEAE7;}
+.top_line_dark {border-top: 1px solid #CCC;}
+
+.font_16 { font-size: 16px}
+.font_14 { font-size: 14px}
+.font_13 { font-size: 13px}
+
+.width_750 { width: 750px; }
+.width_650 { width: 650px; }
+.width_465 { width: 465px; }
+.width_230 { width: 230px; }
+.width_all { width: 100%;}
+
+.height_65 { height: 65px; }
+
+.no_padding { padding: 0px;}
+
+.no_margin { margin: 0px!important;}
+.margin_top_0 { margin-top: 0px; }
+.margin_top_5 { margin-top: 5px; }
+.margin_top_10 { margin-top: 10px; }
+.margin_top_20 { margin-top: 20px; }
+.margin_top_30 { margin-top: 30px; }
+.margin_top_50 { margin-top: 50px; }
+.margin_bottom_10 { margin-bottom: 10px; }
+.margin_bottom_20 { margin-bottom: 20px; }
+.margin_left_60 { margin-left: 60px; }
+.margin_left_125 { margin-left: 125px; }
+.margin_left_145 { margin-left: 145px; }
+.margin_left_230 { margin-left: 230px; }
+.margin_left_240 { margin-left: 240px; }
+.margin_right_0 { margin-right: 0px; }
+.margin_right_10 { margin-right: 10px; }
+.margin_right_20 { margin-right: 20px!important; }
+.margin_tb_10 { margin-top: 10px; margin-bottom: 10px;}
+
+.nobullets { list-style: none; }
+.noborder { border: 0; }
+
+
+p.caption { color: #666; font-size: 13px; margin: 5px 0;}
+
+.orange_text { color: #C46600; }
+.green_text { color: #006600; }
+.gray_text { color: #999999; }
+.gray_bg { background: #F4F4F4; }
+.white_bg { background: #FFF; }
+.centered { text-align: center; }
+.text_left { text-align: left; }
+
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.hidden { display: none !important; visibility: hidden; }
+.hide { display: none; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.left {float: left;}
+.right {float: right;}
+.clear { clear: both; }
+.clear_left
+ { clear: left; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
