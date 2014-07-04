@@ -16,10 +16,14 @@
   background-clip: padding-box; 
 }
 
-@mixin box_shadow($px, $color) {
-  -webkit-box-shadow: $px $color; 
-  -moz-box-shadow: $px $color; 
-  box-shadow: $px $color; 
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+
+@mixin text_shadow($px, $color) {
+  text-shadow: $px $color;
 }
 
 @mixin opacity($num:100) {
